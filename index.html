@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" xml:lang="en">
+    <head>
+        <title>TLC-Learning Management System: Log in to the site</title>
+        <link rel="shortcut icon" href=""/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="keywords" content="moodle, TLC-Learning Management System: Log in to the site"/>
+        <link rel="stylesheet" type="text/css" href=""/>
+        <link rel="stylesheet" type="text/css" href="https://mylearning.thelewiscollege.edu.ph/theme/styles.php/boost/1692856076_1/all"/>
+        <meta name="robots" content="noindex"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="page-login-index" class="format-site  path-login chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam mylearning-thelewiscollege-edu-ph pagelayout-login course-1 context-1 notloggedin ">
+        <div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+        <div id="page-wrapper">
+            <div>
+                <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+            </div>
+            <div id="page" class="container-fluid pt-5 mt-0">
+                <div id="page-content" class="row">
+                    <div id="region-main-box" class="col-12">
+                        <section id="region-main" class="col-12 h-100" aria-label="Content">
+                            <div class="login-wrapper">
+                                <div class="login-container">
+                                    <div role="main">
+                                        <span id="maincontent"></span>
+                                        <div class="loginform">
+                                            <div id="loginlogo" class="login-logo">
+                                                <img id="logoimage" src="https://mylearning.thelewiscollege.edu.ph/pluginfile.php/1/core_admin/logo/0x200/1692856076/tlc_lms_nobg.png" class="img-fluid" alt="TLC-Learning Management System"/>
+                                                <h1 class="login-heading sr-only">Log in to TLC-Learning Management System</h1>
+                                            </div>
+                                            <form class="login-form" method="post" id="login">
+                                                <input id="anchor" type="hidden" name="anchor" value="">
+                                                <script>
+                                                    document.getElementById('anchor').value = location.hash;
+                                                </script>
+                                                <input type="hidden" name="logintoken" value="2wRUWyoJS5CAf2ckY7NyhzJk78Si2Qzi">
+                                                <div class="login-form-username form-group">
+                                                    <label for="username" class="sr-only">Username
+            </label>
+                                                    <input type="text" name="username" id="username" class="form-control form-control-lg" value="" placeholder="Username" autocomplete="username">
+                                                </div>
+                                                <div class="login-form-password form-group">
+                                                    <label for="password" class="sr-only">Password</label>
+                                                    <input type="password" name="password" id="password" value="" class="form-control form-control-lg" placeholder="Password" autocomplete="current-password">
+                                                </div>
+                                                <div class="login-form-submit form-group">
+                                                    <button class="btn btn-primary btn-lg" type="button" id="loginbtn" onclick="redirectToNextPage()">Log in</button>
+                                                </div>
+                                                
+                                                <script>
+                                                    function redirectToNextPage() {
+                                                        window.location.href = 'dashboard.html';
+                                                    }
+                                                </script>
+                                                <div class="login-form-forgotpassword form-group">
+                                                    <a href="forgotpass.html">Lost password?</a>
+                                                </div>
+                                            </form>
+                                            <div class="login-divider"></div>
+                                            <div class="login-identityproviders">
+                                                <h2 class="login-heading">Log in using your account on:</h2>
+                                                <a class="btn login-identityprovider-btn btn-block" href="">
+                                                    <img src="https://accounts.google.com/favicon.ico" alt="" width="24" height="24"/>Google
+                
+                                                </a>
+                                            </div>
+                                            <div class="login-divider"></div>
+                                            <div class="d-flex">
+                                                <button type="button" class="btn btn-secondary" data-modal="alert" data-modal-title-str='["cookiesenabled", "core"]' data-modal-content-str='["cookiesenabled_help_html", "core"]'>Cookies notice</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <footer id="page-footer" class="footer-popover bg-white">
+                <div data-region="footer-container-popover">
+                    <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="Show footer">
+                        <i class="icon fa fa-question fa-fw " aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="footer-content-popover container" data-region="footer-content-popover">
+                    
+                        <div class="logininfo">
+                           
+                        </div>
+                    
+                        </div>
+                        <script>
+                            //<![CDATA[
+                            var require = {
+                                baseUrl: 'https://mylearning.thelewiscollege.edu.ph/lib/requirejs.php/1692856076/',
+                                // We only support AMD modules with an explicit define() statement.
+                                enforceDefine: true,
+                                skipDataMain: true,
+                                waitSeconds: 0,
+
+                                paths: {
+                                    jquery: 'https://mylearning.thelewiscollege.edu.ph/lib/javascript.php/1692856076/lib/jquery/jquery-3.6.4.min',
+                                    jqueryui: 'https://mylearning.thelewiscollege.edu.ph/lib/javascript.php/1692856076/lib/jquery/ui-1.13.2/jquery-ui.min',
+                                    jqueryprivate: 'https://mylearning.thelewiscollege.edu.ph/lib/javascript.php/1692856076/lib/requirejs/jquery-private'
+                                },
+
+                                // Custom jquery config map.
+                                map: {
+                                    // '*' means all modules will get 'jqueryprivate'
+                                    // for their 'jquery' dependency.
+                                    '*': {
+                                        jquery: 'jqueryprivate'
+                                    },
+                                    // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+                                    '*': {
+                                        process: 'core/first'
+                                    },
+
+                                    // 'jquery-private' wants the real jQuery module
+                                    // though. If this line was not here, there would
+                                    // be an unresolvable cyclic dependency.
+                                    jqueryprivate: {
+                                        jquery: 'jquery'
+                                    }
+                                }
+                            };
+
+                            //]]>
+                        </script>
+                        <script src="https://mylearning.thelewiscollege.edu.ph/lib/javascript.php/1692856076/lib/requirejs/require.min.js"></script>
+                        <script>
+                            //<![CDATA[
+                            M.util.js_pending("core/first");
+                            require(['core/first'], function() {
+                                require(['core/prefetch']);
+                                require(["media_videojs/loader"], function(loader) {
+                                    loader.setUp('en');
+                                });
+                                ;
+                                require(['theme_boost/footer-popover'], function(FooterPopover) {
+                                    FooterPopover.init();
+                                });
+                                ;
+                                M.util.js_pending('theme_boost/loader');
+                                require(['theme_boost/loader'], function() {
+                                    M.util.js_complete('theme_boost/loader');
+                                });
+                                ;
+
+                                ;M.util.js_pending('core/notification');
+                                require(['core/notification'], function(amd) {
+                                    amd.init(1, []);
+                                    M.util.js_complete('core/notification');
+                                });
+                                ;M.util.js_pending('core/log');
+                                require(['core/log'], function(amd) {
+                                    amd.setConfig({
+                                        "level": "warn"
+                                    });
+                                    M.util.js_complete('core/log');
+                                });
+                                ;M.util.js_pending('core/page_global');
+                                require(['core/page_global'], function(amd) {
+                                    amd.init();
+                                    M.util.js_complete('core/page_global');
+                                });
+                                ;M.util.js_pending('core/utility');
+                                require(['core/utility'], function(amd) {
+                                    M.util.js_complete('core/utility');
+                                });
+                                M.util.js_complete("core/first");
+                            });
+                            //]]>
+                        </script>
+                        <script>
+                            //<![CDATA[
+                            M.str = {
+                                "moodle": {
+                                    "lastmodified": "Last modified",
+                                    "name": "Name",
+                                    "error": "Error",
+                                    "info": "Information",
+                                    "yes": "Yes",
+                                    "no": "No",
+                                    "cancel": "Cancel",
+                                    "confirm": "Confirm",
+                                    "areyousure": "Are you sure?",
+                                    "closebuttontitle": "Close",
+                                    "unknownerror": "Unknown error",
+                                    "file": "File",
+                                    "url": "URL",
+                                    "collapseall": "Collapse all",
+                                    "expandall": "Expand all"
+                                },
+                                "repository": {
+                                    "type": "Type",
+                                    "size": "Size",
+                                    "invalidjson": "Invalid JSON string",
+                                    "nofilesattached": "No files attached",
+                                    "filepicker": "File picker",
+                                    "logout": "Logout",
+                                    "nofilesavailable": "No files available",
+                                    "norepositoriesavailable": "Sorry, none of your current repositories can return files in the required format.",
+                                    "fileexistsdialogheader": "File exists",
+                                    "fileexistsdialog_editor": "A file with that name has already been attached to the text you are editing.",
+                                    "fileexistsdialog_filemanager": "A file with that name has already been attached",
+                                    "renameto": "Rename to \"{$a}\"",
+                                    "referencesexist": "There are {$a} links to this file",
+                                    "select": "Select"
+                                },
+                                "admin": {
+                                    "confirmdeletecomments": "Are you sure you want to delete the selected comment(s)?",
+                                    "confirmation": "Confirmation"
+                                },
+                                "debug": {
+                                    "debuginfo": "Debug info",
+                                    "line": "Line",
+                                    "stacktrace": "Stack trace"
+                                },
+                                "langconfig": {
+                                    "labelsep": ": "
+                                }
+                            };
+                            //]]>
+                        </script>
+                        <script>
+                            //<![CDATA[
+                            (function() {
+                                Y.use("moodle-filter_mathjaxloader-loader", function() {
+                                    M.filter_mathjaxloader.configure({
+                                        "mathjaxconfig": "\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n",
+                                        "lang": "en"
+                                    });
+                                });
+                                M.util.help_popups.setup(Y);
+                                M.util.js_pending('random6642b5267e1052');
+                                Y.on('domready', function() {
+                                    M.util.js_complete("init");
+                                    M.util.js_complete('random6642b5267e1052');
+                                });
+                            }
+                            )();
+                            //]]>
+                        </script>
+                    </div>
+                </div>
+                <div class="footer-content-debugging footer-dark bg-dark text-light">
+                    <div class="container-fluid footer-dark-inner"></div>
+                </div>
+            </footer>
+        </div>
+        <script>
+            function redirectToNextPage() {
+                    window.location.href = 'dashboard.html';
+                }
+        </script>
+    </body>
+</html>
